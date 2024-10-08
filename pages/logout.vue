@@ -1,15 +1,16 @@
 <script setup>
 definePageMeta({
   middleware: function (to, from) {
-    const isAuthenticated = useCookie('is-authenticated')
-    const currentUser = useCookie('current-user')
+    // Get and clear cookie
+    const isAuthenticated = useCookie("is-authenticated");
+    const currentUser = useCookie("current-user");
 
-    isAuthenticated.value = ''
-    currentUser.value = ''
+    isAuthenticated.value = "";
+    currentUser.value = "";
 
-    return navigateTo('/')
-  }
-})
+    return navigateTo("/");
+  },
+});
 </script>
 
 <template>

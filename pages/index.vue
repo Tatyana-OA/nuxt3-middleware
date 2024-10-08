@@ -1,6 +1,6 @@
 <script setup>
-const isAuthenticated = useCookie('is-authenticated')
-const currentUser = useCookie('current-user')
+const isAuthenticated = useCookie("is-authenticated");
+const currentUser = useCookie("current-user");
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const currentUser = useCookie('current-user')
     </div>
     <div>
       <hgroup>
-        <h2>Navigation</h2>
+        <h2 class="nav-title">Navigation</h2>
         <p>Simple navigation links for testing</p>
       </hgroup>
       <ul>

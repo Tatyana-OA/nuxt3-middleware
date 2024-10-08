@@ -57,9 +57,12 @@ article div {
 }
 
 /* Nav */
-summary[role='link'].secondary:is([aria-current], :hover, :active, :focus) {
+summary[role="link"].secondary:is([aria-current], :hover, :active, :focus) {
   background-color: transparent;
   color: var(--secondary-hover);
+}
+.nav-title {
+  color: rgba(248, 243, 243, 0.942);
 }
 
 /* Hero Image */

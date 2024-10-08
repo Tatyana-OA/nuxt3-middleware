@@ -1,14 +1,16 @@
 <script setup>
 definePageMeta({
+  // Inline Middleware
   middleware: function (to, from) {
-    const isAuthenticated = useCookie('is-authenticated')
-    const currentUser = useCookie('current-user')
+    // useCookie - composable to access cookie from the browser
+    const isAuthenticated = useCookie("is-authenticated");
+    const currentUser = useCookie("current-user");
 
     if (isAuthenticated.value && currentUser.value) {
-      return navigateTo('/profile/' + currentUser.value)
+      return navigateTo("/profile/" + currentUser.value);
     }
-  }
-})
+  },
+});
 </script>
 
 <template>
