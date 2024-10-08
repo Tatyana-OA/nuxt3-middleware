@@ -1,5 +1,6 @@
 // Nuxt functions help with type safety
 export default defineNuxtRouteMiddleware((to, from) => {
+  console.log("----Profile Middleware----");
   const currentUser = useCookie("current-user");
   const isAuthenticated = useCookie("is-authenticated");
 
