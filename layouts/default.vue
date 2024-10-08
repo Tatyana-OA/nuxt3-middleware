@@ -4,6 +4,5 @@
     <main class="container">
       <slot />
     </main>
-    <TheFooter />
   </div>
 </template>
