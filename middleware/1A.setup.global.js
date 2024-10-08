@@ -1,11 +1,10 @@
 export default defineNuxtRouteMiddleware(async (to, from) => {
   console.log("----Setup Middleware----");
 
-  if (to.path === "/login") {
+  if (to.path === "/munchkin") {
     throw createError({
       statusCode: 405,
-      statusMessage:
-        "Oh, snap, I'm learning about middleware errors, so there you go.",
+      statusMessage: "Now, what are you doing looking for munchkins?",
     });
   }
 
